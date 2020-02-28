@@ -1,3 +1,14 @@
 demo: someval
 server:
   port: 80
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://mysql:3306/db_example
+spring:
+  datasource:
+    username: root
+    password: password
