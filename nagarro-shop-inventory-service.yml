@@ -1,1 +1,3 @@
-demo=someval
+demo: someval
+server
+  port: 80
