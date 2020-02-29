@@ -10,3 +10,5 @@ spring:
     url: jdbc:mysql://mysql:3306/db_example
     username: root
     password: password
+    driverClassName: com.mysql.cj.jdbc.Driver
+    dialect: org.hibernate.dialect.MySQL8Dialect
