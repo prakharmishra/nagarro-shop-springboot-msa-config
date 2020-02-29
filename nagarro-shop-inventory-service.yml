@@ -1,4 +1,4 @@
-demo: someval
+someprop1: someval
 server:
   port: 80
 
