@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${nagarro.mysql-server}/inventory
+
+  cloud:
+    stream:
+      bindings:
+        orderRequest-in-0:
+          group: inventory-service
+          destination: order
+          
+        orderRequestTimedOut-in-0:
+          group: inventory-service
+          destination: order
+          
+        orderItemsAvailable-out-0:
+          destination: order
+          
+        orderItemsNotAvailable-out-0:
+          destination: order
