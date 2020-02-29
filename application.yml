@@ -1,4 +1,7 @@
 ---
+server:
+  port: 80
+
 nagarro:
   config-server: config-server.default.svc.cluster.local:8888
   mysql-server: mysql.default.svc.cluster.local:3306
