@@ -1,0 +1,4 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://${nagarro.mysql-server}/inventory
