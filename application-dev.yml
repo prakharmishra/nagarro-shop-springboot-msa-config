@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: root
+    password: password
+    driverClassName: com.mysql.cj.jdbc.Driver
+    dialect: org.hibernate.dialect.MySQL8Dialect
+  
+  zipkin:
+    base-url: http://${nagarro.zipkin-server}/
+    
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+          - ${nagarro.kafka-server}
