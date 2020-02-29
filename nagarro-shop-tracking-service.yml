@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${nagarro.mysql-server}/tracking
+
+  cloud:
+    stream:
+      bindings:
+        orderRequest-in-0:
+          group: tracking-service
+          destination: order
+          
+        orderRequestTimedOut-in-0:
+          group: tracking-service
+          destination: order
+          
+        orderItemsAvailable-in-0:
+          group: tracking-service
+          destination: order
+          
+        orderItemsNotAvailable-in-0:
+          group: tracking-service
+          destination: order
