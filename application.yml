@@ -1,2 +1,12 @@
 ---
-somekey: val
+nagarro:
+  config-server: config-server.default.svc.cluster.local:8888
+  mysql-server: mysql.default.svc.cluster.local:3306
+  kafka-server: kafka-listener.default.svc.cluster.local:9093
+  inventory-service: inventory-service.default.svc.cluster.local:80
+  order-service: order-service.default.svc.cluster.local:80
+  tracking-service: tracking-service.default.svc.cluster.local:80
+  user-service: user-service.default.svc.cluster.local:80
+  zipkin-mysql-server: zipkin-mysql.default.svc.cluster.local:3306
+  zipkin-server: zipkin-service.default.svc.cluster.local:9411
+  zookeeper-server: zk-cs.default.svc.cluster.local:2181
