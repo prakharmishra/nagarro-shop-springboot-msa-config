@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://${nagarro.mysql-server}/inventory
+    url: jdbc:mysql://${nagarro.mysql-server}/inventory?serverTimezone=UTC&useLegacyDatetimeCode=false
 
   cloud:
     stream:
