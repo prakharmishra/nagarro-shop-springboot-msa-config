@@ -3,16 +3,16 @@ spring:
     gateway:
       routes:
       - id: inventory_route
-        uri: https://${nagarro.inventory-service}/inventory
+        uri: http://${nagarro.inventory-service}/inventory
         predicates:
         - Path=/inventory/{segment}
         
       - id: order_route
-        uri: https://${nagarro.order-service}/order
+        uri: http://${nagarro.order-service}/order
         predicates:
         - Path=/order/{segment}
         
       - id: user_route
-        uri: https://${nagarro.user-service}/user
+        uri: http://${nagarro.user-service}/user
         predicates:
         - Path=/user/{segment}
