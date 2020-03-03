@@ -17,3 +17,6 @@ spring:
         binder:
           brokers:
           - ${nagarro.kafka-server}
+
+messagerelay:
+  timeoutmillis: 3000
