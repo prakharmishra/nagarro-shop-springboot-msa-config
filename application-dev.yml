@@ -19,4 +19,4 @@ spring:
           - ${nagarro.kafka-server}
 
 messagerelay:
-  timeoutmillis: 3000
+  fixedratemillis: 3000
