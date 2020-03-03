@@ -20,3 +20,4 @@ spring:
 
 messagerelay:
   fixedratemillis: 3000
+  timeoutmillis: 10000
