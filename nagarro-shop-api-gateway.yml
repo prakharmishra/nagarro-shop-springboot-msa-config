@@ -7,7 +7,7 @@ spring:
         predicates:
         - Path=/catalogue/**
         filters:
-        - RewritePath=$\{segment}
+        - RewritePath=(?<segment>/?.*), $\{segment}
         
       - id: order_route
         uri: http://${nagarro.order-service}/order
