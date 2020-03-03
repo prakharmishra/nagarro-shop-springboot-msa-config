@@ -5,14 +5,16 @@ spring:
       - id: inventory_route
         uri: http://${nagarro.inventory-service}/catalogue
         predicates:
-        - Path=/catalogue/{segment}
+        - Path=/catalogue/**
+        filters:
+        - RewritePath=$\{segment}
         
       - id: order_route
         uri: http://${nagarro.order-service}/order
         predicates:
-        - Path=/order/{segment}
+        - Path=/order/**
         
       - id: user_route
         uri: http://${nagarro.user-service}/user
         predicates:
-        - Path=/user/{segment}
+        - Path=/user/**
